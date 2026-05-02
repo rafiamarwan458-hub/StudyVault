@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#tasks_box{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#no_task_found_msg{
+    margin-top: 4rem;
+    color: rgb(26, 26, 93);
+}
+#tasks_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#task_search_input{
+    padding: 0.4rem 0.5rem;
+    width: 30rem;
+    margin: 1rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.5rem rgb(195, 194, 194);
+    transition: box-shadow 0.3s ease;
+}
+#task_search_input:hover{
+    box-shadow: 0 0.2rem 0.5rem rgb(109, 109, 109);
+}
+.tasks_filter_btns{
+    padding: 0.6rem 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 550;
+    margin: 0rem 1rem;
+    box-shadow: 0 0 3px 1px rgb(204, 202, 202);
+    transition: box-shadow 0.3s ease;
+}
+.tasks_filter_btns:hover{
+    box-shadow: 0 0.1rem 0.5rem rgb(109, 109, 109);
+}
+.task_card{
+    border: 0.1rem solid black;
+    width: 30rem;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    box-shadow: 0 0.1rem 0.6rem rgb(195, 194, 194);
+    margin-bottom: 0.5rem;
+}
+.task_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0.4rem 1.5rem rgb(109, 109, 109);
+}
+#task_btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0.5rem;
+    gap: 0.5rem;
+}
+.task_btns{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.task_btns:hover{
+    transform: scale(1.3);
+}
+#date_and_btn_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+#due_date{
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(44, 44, 161);
+}
+#task_content_txt{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .task_card {
+        width: 90vw;
+        max-width: 30rem;
+        padding: 1rem 1.5rem;
+    }
+    #task_search_input {
+        width: 90vw;
+        max-width: 30rem;
+    }
+    .tasks_filter_btns {
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .task_card {
+        padding: 1rem;
+    }
+    #task_content_txt {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+.no_task_found_msg.dark{
+    color: rgb(203, 203, 249);
+}
+#task_search_input.dark{
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0 0.1rem 0.5rem rgb(147, 147, 147);
+}
+#task_search_input.dark:hover{
+    box-shadow: 0 0.2rem 0.6rem rgb(147, 147, 147);
+}
+.tasks_filter_btns.dark:hover{
+    box-shadow: 0 0.2rem 0.5rem rgb(185, 185, 185);
+}
+#task_content_txt.dark{
+    color: rgb(209, 209, 209);
+}
+#due_date.dark{
+    color: rgb(203, 203, 249);
+}

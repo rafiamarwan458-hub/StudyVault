@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#about_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding-top: 10rem;
+    min-height: 89vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(67, 67, 186);
+}
+
+
+
+
+
+#about_box.dark{
+    color: rgb(184, 184, 239);
+}

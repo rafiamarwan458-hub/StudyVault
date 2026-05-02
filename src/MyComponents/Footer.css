@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#footer_container{
+    background-color: rgb(38, 38, 103);
+    color: rgb(195, 195, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    position: fixed;
+    bottom: 0rem;
+}

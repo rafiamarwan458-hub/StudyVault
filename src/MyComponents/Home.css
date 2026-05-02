@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#Home_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: 89vh;
+    text-align: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+#Home_box h1{
+    font-size: 2rem;
+    color: rgb(40, 40, 124);
+}
+#Home_box h2{
+    font-size: 1.2rem;
+    color: rgb(70, 70, 158);
+}
+
+
+
+
+
+#Home_box.dark h1{
+    color: rgb(184, 184, 239);
+}
+#Home_box.dark h2{
+    color: rgb(144, 144, 209);
+}
